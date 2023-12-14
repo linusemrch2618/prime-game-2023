@@ -78,7 +78,7 @@ public class MarkForsterProMax extends Primspieler {
     public Zug getBesterZug(TreeSet<Zug> besteZuege, int[] feld) {
         Iterator<Zug> it = besteZuege.iterator();
         int maxScore = Integer.MIN_VALUE;
-        Zug besterZug = besteZuege.getFirst();
+        Zug besterZug = besteZuege.iterator().next();
         while (it.hasNext()) {
             Zug z = it.next();
             int[] gegnerFeld = getNeuesFeld(feld, z);
@@ -99,13 +99,13 @@ public class MarkForsterProMax extends Primspieler {
     public Zug getBesterZugGegner(TreeSet<Zug> besteZuegeGegner, int[] feld) {
         Iterator<Zug> itGegner = besteZuegeGegner.iterator();
         int maxScoreGegner = Integer.MIN_VALUE;
-        Zug besterZugGegner = besteZuegeGegner.getFirst();
+        Zug besterZugGegner = besteZuegeGegner.iterator().next();
         while (itGegner.hasNext()) {
             Zug z = itGegner.next();
             int[] gegnerFeld = getNeuesFeld(feld, z);
             TreeSet<Zug> besteZuegeLv2 = getBesteZuege(gegnerFeld, 1);
             if (!besteZuegeLv2.isEmpty()) {
-                int score = z.gewinn - besteZuegeLv2.getFirst().gewinn;
+                int score = z.gewinn - besteZuegeLv2.iterator().next().gewinn;
                 if (score > maxScoreGegner) {
                     besterZugGegner = z;
                     maxScoreGegner = score;
