@@ -134,7 +134,7 @@ public class MarkForsterProMax extends Primspieler {
     }
 
     public String getPlayerName() {
-        return "Mark.Forster.PRO"; // Plus Max Ultra 5G V2.0"; // Bitte anpassen!
+        return "Mark Forster Pro Plus Max Ultra 5G V2.0";
     }
 
     public long getStudentNumber() {
