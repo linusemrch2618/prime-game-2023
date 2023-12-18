@@ -294,20 +294,20 @@ public class Primspielertest implements Logging {
         if  ((args.length == 1 && "-i".equalsIgnoreCase(args[0])) || (args.length == 0)) {
             // interactive mode
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            System.out.println("Player A (Home): ");
-            System.out.flush();
+            /*System.out.println("Player A (Home): ");
+            System.out.flush();*/
             String home;
             try {
-                home = "MarkForsterProMax";// br.readLine();
-                System.out.println("Player B (Guest): ");
-                System.out.flush();
-                String guest = "na.edu.pon.primegame.player.reference.ReferencePlayer4";// br.readLine();
+                home = "MoenchVonLuetzerath";// br.readLine();
+                /*System.out.println("Player B (Guest): ");
+                System.out.flush();*/
+                String guest = "MoenchVonLuetzerathTest";// br.readLine();
                 trainer = new Primspielertest(home, guest);
             } catch (Exception e) {
                 e.printStackTrace(System.err);
                 System.exit(1);
             }
-            System.out.println("Board size (empty string for default = "+BOARD_SIZE+"): ");
+            /*System.out.println("Board size (empty string for default = "+BOARD_SIZE+"): ");
             System.out.flush();
             String size;
             try {
@@ -316,7 +316,8 @@ public class Primspielertest implements Logging {
             } catch (Exception e) {
                 System.out.println("Board size set to default = "+BOARD_SIZE+".");
                 System.out.flush();
-            }
+            }*/
+            BOARD_SIZE=500;
         } else if (args.length >= 2) {
             trainer = new Primspielertest(args[0], args[1]);
             if (args.length >= 3)

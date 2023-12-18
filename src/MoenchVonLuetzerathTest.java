@@ -1,5 +1,8 @@
-import java.util.*;
-public class MarkForsterProMax extends Primspieler {
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class MoenchVonLuetzerathTest extends Primspieler {
     public static class Zug implements Comparable<Zug> {
         private final int index;
         private final int zahl;
@@ -82,7 +85,7 @@ public class MarkForsterProMax extends Primspieler {
         while (it.hasNext()) {
             Zug z = it.next();
             int[] gegnerFeld = getNeuesFeld(feld, z);
-            int anzahlZuege = Math.max(1, (int)(feld.length * 0.1D));
+            int anzahlZuege = Math.max(10, (int)(gegnerFeld.length * 0.1D));
             TreeSet<Zug> besteZuegeGegner = getBesteZuege(gegnerFeld, anzahlZuege);
             if (!besteZuegeGegner.isEmpty()) {
                 int score = z.gewinn - getBesterZugGegner(besteZuegeGegner, gegnerFeld).gewinn;
@@ -134,7 +137,7 @@ public class MarkForsterProMax extends Primspieler {
     }
 
     public String getPlayerName() {
-        return "Mark Forster Pro Plus Max Ultra 5G V2.0";
+        return "MoenchVonLuetzerathTest";
     }
 
     public long getStudentNumber() {
