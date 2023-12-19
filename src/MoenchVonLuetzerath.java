@@ -137,7 +137,7 @@ public class MoenchVonLuetzerath extends Primspieler {
     }
 
     public String getPlayerName() {
-        return "MoenchVonLuetzerath";
+        return "Mönch von Lützerath";
     }
 
     public long getStudentNumber() {
