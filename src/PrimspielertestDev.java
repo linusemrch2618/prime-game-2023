@@ -317,7 +317,7 @@ public class PrimspielertestDev implements Logging {
                 System.out.println("Board size set to default = "+BOARD_SIZE+".");
                 System.out.flush();
             }*/
-            BOARD_SIZE = 500;
+            BOARD_SIZE = 200;
         } else if (args.length >= 2) {
             trainer = new PrimspielertestDev(args[0], args[1]);
             if (args.length >= 3)
