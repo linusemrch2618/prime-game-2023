@@ -141,9 +141,6 @@ public class MoenchVonLuetzerath extends Primspieler {
     }
 
     public long getStudentNumber() {
-        return 202011111;  // Ihre Spielernummer
+        return 202011111;
     }
-
-    // Bitte nicht vergessen, ein Hochformat-Bild im JPG-Format
-    // als Datei <Matrikelnummer>.jpg mit einzureichen!
 }
