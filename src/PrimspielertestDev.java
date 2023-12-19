@@ -298,7 +298,7 @@ public class PrimspielertestDev implements Logging {
             //System.out.flush();
             String home;
             try {
-                home = "MoenchVonLuetzerathTest";// br.readLine();
+                home = "na.edu.pon.primegame.player.reference.ReferencePlayer4";// br.readLine();
                 //System.out.println("Player B (Guest): ");
                 //System.out.flush();
                 String guest = "MoenchVonLuetzerath";// br.readLine();
