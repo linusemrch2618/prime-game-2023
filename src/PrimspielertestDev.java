@@ -298,10 +298,10 @@ public class PrimspielertestDev implements Logging {
             //System.out.flush();
             String home;
             try {
-                home = "na.edu.pon.primegame.player.reference.ReferencePlayer4";// br.readLine();
+                home = "Test"; // br.readLine();
                 //System.out.println("Player B (Guest): ");
                 //System.out.flush();
-                String guest = "MoenchVonLuetzerath";// br.readLine();
+                String guest = "na.edu.pon.primegame.player.reference.ReferencePlayer4";// br.readLine();
                 trainer = new PrimspielertestDev(home, guest);
             } catch (Exception e) {
                 e.printStackTrace(System.err);
@@ -317,7 +317,7 @@ public class PrimspielertestDev implements Logging {
                 System.out.println("Board size set to default = "+BOARD_SIZE+".");
                 System.out.flush();
             }*/
-            BOARD_SIZE = 200;
+            BOARD_SIZE = 119;
         } else if (args.length >= 2) {
             trainer = new PrimspielertestDev(args[0], args[1]);
             if (args.length >= 3)

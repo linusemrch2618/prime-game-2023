@@ -46,9 +46,9 @@ public class MoenchVonLuetzerathTest extends Primspieler {
         int wert = zahl;
         if (isPrime(zahl)) {
             if (zahl % 2 != 0) {
-                wert = -(zahl + 1) / 2;
+                wert = wert - ((zahl + 1) / 2);
             } else {
-                wert = -zahl / 2;
+                wert = wert - (zahl / 2);
             }
         }
 
@@ -137,13 +137,10 @@ public class MoenchVonLuetzerathTest extends Primspieler {
     }
 
     public String getPlayerName() {
-        return "MoenchVonLuetzerathTest";
+        return "Mönch von Lützerath";
     }
 
     public long getStudentNumber() {
-        return 202011111;  // Ihre Spielernummer
+        return 202011111;
     }
-
-    // Bitte nicht vergessen, ein Hochformat-Bild im JPG-Format
-    // als Datei <Matrikelnummer>.jpg mit einzureichen!
 }

@@ -301,7 +301,7 @@ public class Primspielertest implements Logging {
                 home = "MoenchVonLuetzerath";// br.readLine();
                 /*System.out.println("Player B (Guest): ");
                 System.out.flush();*/
-                String guest = "MoenchVonLuetzerathTest";// br.readLine();
+                String guest = "Test";// br.readLine();
                 trainer = new Primspielertest(home, guest);
             } catch (Exception e) {
                 e.printStackTrace(System.err);
@@ -317,7 +317,7 @@ public class Primspielertest implements Logging {
                 System.out.println("Board size set to default = "+BOARD_SIZE+".");
                 System.out.flush();
             }*/
-            BOARD_SIZE=500;
+            BOARD_SIZE=119;
         } else if (args.length >= 2) {
             trainer = new Primspielertest(args[0], args[1]);
             if (args.length >= 3)
