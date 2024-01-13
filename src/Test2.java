@@ -1,6 +1,6 @@
-import java.util.*;
+import java.util.ArrayList;
 
-public class Test extends Primspieler {
+public class Test2 extends Primspieler {
     public static class Move {
         private final int number;
         private final int value;
@@ -92,7 +92,7 @@ public class Test extends Primspieler {
             if (!movesLv2.isEmpty()) {
                 int scoreOpp = i.value - getFactorSum(movesOpp, i);
                 Move moveLv2 = getBestMoveLv2(movesLv2);
-                scoreOpp = scoreOpp - (3 * (moveLv2.value - getFactorSum(movesLv2, moveLv2)));
+                scoreOpp = (int) (scoreOpp - (3 * (moveLv2.value - getFactorSum(movesLv2, moveLv2))));
                 if (scoreOpp > maxScoreOpp) {
                     maxScoreOpp = scoreOpp;
                     bestMoveOpp = i;
@@ -118,7 +118,7 @@ public class Test extends Primspieler {
     }
 
     public String getPlayerName() {
-        return "Test";
+        return "Test2";
     }
     public long getStudentNumber() {
         return 202011111;
